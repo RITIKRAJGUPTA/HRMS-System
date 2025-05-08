@@ -1,0 +1,119 @@
+/* General container styles */
+.leave-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Table styling */
+.leave-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table header styling */
+.leave-container th,
+.leave-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Table header styling */
+.leave-container th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+/* Table data styling */
+.leave-container td {
+  background-color: #f9f9f9;
+}
+
+/* Styling for select and button inputs */
+.leave-container select,
+.leave-container button {
+  padding: 8px 10px;
+  font-size: 14px;
+  margin-top: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for select and button */
+.leave-container select:hover,
+.leave-container button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Buttons (Leave Approval/Reject) */
+.leave-container button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.leave-container button.reject {
+  background-color: #f44336;
+}
+
+.leave-container button.approve:hover,
+.leave-container button.reject:hover {
+  background-color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .leave-container {
+    padding: 1rem;
+  }
+
+  /* Table styling for small screens */
+  .leave-container table {
+    font-size: 12px;
+  }
+
+  .leave-container th, .leave-container td {
+    padding: 10px;
+  }
+
+  /* Make the buttons and select smaller on mobile */
+  .leave-container select,
+  .leave-container button {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leave-container {
+    padding: 0.5rem;
+  }
+
+  /* Stack table headers and data for very small screens */
+  .leave-container table {
+    font-size: 10px;
+  }
+
+  .leave-container th,
+  .leave-container td {
+    padding: 8px;
+  }
+
+  .leave-container select,
+  .leave-container button {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+}

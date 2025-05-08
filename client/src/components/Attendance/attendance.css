@@ -1,0 +1,106 @@
+/* Attendance Container */
+.attendance-container {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Table Styling */
+.attendance-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.attendance-container th,
+.attendance-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 1rem;
+}
+
+.attendance-container th {
+  background-color: #f4f4f4;
+  color: #444;
+  font-weight: bold;
+}
+
+.attendance-container td {
+  color: #666;
+}
+
+/* Input and Select Styling */
+.attendance-container input[type="text"],
+.attendance-container select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.attendance-container input[type="text"]:focus,
+.attendance-container select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .attendance-container {
+    padding: 15px;
+  }
+
+  .attendance-container h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .attendance-container table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .attendance-container th,
+  .attendance-container td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .attendance-container input[type="text"],
+  .attendance-container select {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .attendance-container {
+    padding: 10px;
+  }
+
+  .attendance-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .attendance-container table {
+    font-size: 0.85rem;
+  }
+
+  .attendance-container th,
+  .attendance-container td {
+    padding: 8px;
+  }
+
+  .attendance-container input[type="text"],
+  .attendance-container select {
+    font-size: 0.85rem;
+  }
+}

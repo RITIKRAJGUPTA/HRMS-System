@@ -1,0 +1,51 @@
+.sidebar {
+    width: 230px;
+    background-color: white;
+    border-right: 2px solid #eee;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #6c2bd9;
+    font-size: 18px;
+  }
+  
+  .search {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    font-size: 13px;
+    color: gray;
+    margin: 20px 0 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  .menu li {
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .menu li:hover,
+  .menu .active {
+    background-color: #f1edfb;
+    color: #6c2bd9;
+    font-weight: 500;
+  }
+  
