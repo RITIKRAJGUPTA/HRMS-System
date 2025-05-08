@@ -8,7 +8,15 @@ const candidateRoutes = require('./routes/candidateRoutes');
 const employeeRoutes = require('./routes/employees');
 
 const app = express();
-app.use(cors());
+
+// ✅ Replace with your actual frontend URL
+const allowedOrigin = 'https://hrms-system-by-ritik.onrender.com';
+
+app.use(cors({
+  origin: allowedOrigin,
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use('/api/auth', authRoutes);
